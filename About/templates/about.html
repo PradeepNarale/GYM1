@@ -1,0 +1,104 @@
+{% extends 'navbar.html' %}
+{% block css %}
+<style>
+  body {
+    background-color: rgb(250, 235, 215);
+  }
+
+  .myCarousel {
+    height: 500px;
+    width: 1500px;
+    overflow: hidden;
+    margin: auto;
+  }
+</style>
+{% endblock %}
+
+
+{% block content %}
+
+
+<!-- Inner -->
+<div class="carousel-inner">
+  <!-- Single item -->
+  <div class="carousel-item active  myCarousel">
+    <img src="/static/g3.png" class="d-block w-100" alt="...">
+    <div class="carousel-caption d-none d-md-block">
+      <h1>About Us</h1>
+      <p>Build Your Body Strong</p>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="card mt-5 mb-3">
+          <div class="card-body">
+            <h5 class="card-title text-center ">About us</h5>
+            <p class="card-text">A gym session or brisk walk can help. Physical activity stimulates various brain
+              chemicals that may leave you feeling happier, more relaxed and less anxious.</p>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card mt-5 mb-3">
+          <div class="card-body">
+            <h5 class="card-title text-center ">Contact No</h5>
+            <p class="card-text">Contact US:<br>
+              +91 1800 123 3705
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="card mt-3 mb-5">
+          <div class="card-body">
+            <h5 class="card-title  text-center ">Address</h5>
+            <p class="card-text">ATTN: Dennis Menees, CEO<br>
+              Global Co.<br>
+              90210 Broadway Blvd.<br>
+              Nashville, TN 37011-5678</p>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card mt-3  mb-5">
+          <div class="card-body">
+            <h5 class="card-title text-center ">Gmail</h5>
+            <p class="card-text"> Gmail : <br> abc@gmail.com<br>
+              qwe@gmail.com<br>
+              assd@gmail.com</p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container text-center">
+      <h2 class=""><u>OUT TRAINERS</u></h2>
+      <img src="/static/t1.png" class=" rounded-circle mt-5" width="400"
+        height="400">
+        <h1>JOHN CINA</h1>
+    </div>
+
+    <div class="text-center">
+      <img src="/static/t2.png" class=" rounded-circle mt-5" width="400"
+        height="400">
+        <h1>ABRIHAN LINKAN</h1>
+    </div>
+    <div class="text-center mb-5">
+      <img src="/static/t3.png" class=" rounded-circle mt-5" width="400"
+        height="400">
+        <h1>ROMAN RINGS</h1>
+    </div>
+
+
+
+    {% endblock %}
+
+  </div>

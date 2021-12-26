@@ -1,0 +1,67 @@
+{% extends 'navbar.html' %}
+
+{% block css %}
+<style>
+body
+ {background-color: rgb(250, 235, 215);}
+
+.card {
+    height: 600px;
+
+</style>
+
+{% endblock %}
+{% block content %}
+
+<div class="container mt-3">
+    <h1 class="text-center  mb-5">SERVICES</h1>
+    <div class="row text-center  mb-5">
+        <div class="col-sm-4">
+            <img class="" style="max-width: 100px; height: 100px;" src="/static/s1.png">
+            <h3 style="color:black">Main Workout Area</h3>
+        </div>
+         <div class="col-sm-4">
+            <img class="" style="max-width: 100px; height: 100px;" src="/static/s2.png">
+            <h3 style="color:black">Cardio area/ Excerise theatre</h3>
+        </div>
+         <div class="col-sm-4">
+            <img class="" style="max-width: 100px; height: 100px;" src="/static/s3.png">
+            <h3 style="color:black">Sports Facilities</h3>
+        </div>
+
+<div class="row text-center text-white mt-5 mb-5">
+
+        <div class="col-sm-4">
+            <img class="" style="max-width: 100px; height: 100px;" src="/static/s4.png">
+            <h3 style="color:black">Personal Training</h3>
+        </div>
+         <div class="col-sm-4">
+            <img class="" style="max-width: 100px; height: 100px;" src="/static/s5.png">
+            <h3 style="color:black">Other Services</h3>
+        </div>
+         <div class="col-sm-4">
+            <img class="" style="max-width: 100px; height: 100px;" src="/static/s7.png">
+            <h3 style="color:black">Types of servces in health clubs</h3>
+        </div>
+
+<div class="container">
+    <h1 class="text-center mt-5 mb-5 " style="color:black">Traning Equipments Available in GYM</h1>
+<div class="row">
+  {% for info in allinfokey %}
+  <div class="col-sm-3 ">
+    <div class="card mt-3 mb-3  ">
+      <img src="{{ info.upload.url }}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title " style="color:black ">{{info.name}}</h5>
+
+        <p class="card-text" style="color:black ">{{info.info}}</p>
+        <a href="{{info.links}}" class="btn btn-primary ">View More</a>
+      </div>
+    </div>
+  </div>
+{% endfor %}
+</div>
+</div>
+
+
+{% endblock %}
